@@ -1,4 +1,4 @@
-from ngram_model import NGramModel
+from src.ngram_model import NGramModel
 import random
 
 def generate_text(model, seed, length=50):
