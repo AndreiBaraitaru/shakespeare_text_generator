@@ -1,7 +1,7 @@
 import re
 import random
 from collections import defaultdict
-from ngram_model import NGramModel
+
 
 def generate_text(model, seed, length=50):
     current_ngram = tuple(seed.lower().split())

@@ -1,4 +1,8 @@
-from src.ngram_model import NGramModel
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
+from ngram_model import NGramModel
 import random
 
 def generate_text(model, seed, length=50):
@@ -15,7 +19,10 @@ def generate_text(model, seed, length=50):
     return ' '.join(generated_text)
 
 if __name__ == "__main__":
-    with open("data/shakespeare.txt", "r", encoding="utf-8") as f:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    data_path = os.path.join(script_dir, "data", "shakespeare.txt")
+    
+    with open(data_path, "r", encoding="utf-8") as f:
         text = f.read()
     
     model = NGramModel(n=2)
