@@ -16,7 +16,7 @@ shakespeare_text_generator/
 │   ├── tests.py          # Unit tests file
 │── main.py               # Entry point for running the project, run before you run the other files!!
 │── README.md             # Project documentation
-│── requirements.txt      # Dependencies
+│── requirements.txt      # Dependencies, no need to install them if you already have the libraries installed locally 
 ```
 
 ## Installation
