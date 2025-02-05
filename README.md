@@ -11,7 +11,7 @@ shakespeare_text_generator/
 │── data/
 │   └── shakespeare.txt   # The file I am using for the Shakespeare text
 │── src/
-│   ├── ngram_model.py    # N-gram model implementation
+│   ├── ngram_model.py    # The n-gram model implementation file where we do the preprocessing, build the n-grams and compute the probabilities
 │   ├── evaluation.py     # Human evaluation analysis
 │   ├── tests.py          # Unit tests
 │── main.py               # Entry point for running the project
