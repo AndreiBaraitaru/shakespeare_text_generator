@@ -4,7 +4,7 @@
 This project implements an n-gram-based text generator to mimic the style of Shakespeare. It supports bigrams, trigrams, and quadgrams to generate text based on a given seed phrase.
 
 ## Folder Structure
-
+~~~
 shakespeare_text_generator/
 │── data/
 │   └── shakespeare.txt   # The file I am using for the Shakespeare text
@@ -15,7 +15,7 @@ shakespeare_text_generator/
 │── main.py               # Entry point for running the project, run before you run the other files!!
 │── README.md             # Project documentation
 │── requirements.txt      # Dependencies, no need to install them if you already have the libraries installed locally 
-
+~~~
 
 ## Installation
 1. Clone the repository:
