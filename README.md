@@ -31,7 +31,7 @@ shakespeare_text_generator/
    ```
 
 ## Usage
-Run the text generator with:
+Run the text generator with python main.py. It's important you first run main.py before running the tests or evaluation.
 ```sh
 python main.py
 ```
