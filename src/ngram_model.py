@@ -10,20 +10,29 @@ class NGramModel:
     
     def preprocess_text(self, text):
         text = text.lower()
-        text = re.sub(r'[^a-z\\s]', '', text)
-        tokens = text.split()
+        text = re.sub(r'[^a-zA-Z ]', ' ', text)  # Ensure spaces remain
+        tokens = text.split()  # Now correctly splits words
+        print(f"Debug - First 20 tokens: {tokens[:20]}")  # Debugging print
         return tokens
+
+
+
     
     def build_ngrams(self, tokens):
         for i in range(len(tokens) - self.n):
             ngram = tuple(tokens[i:i + self.n])
             next_token = tokens[i + self.n]
             self.ngram_counts[ngram][next_token] += 1
+        print(f"Total n-grams stored: {len(self.ngram_counts)}")  
+
     
     def compute_probabilities(self):
         for ngram, next_words in self.ngram_counts.items():
             total_count = sum(next_words.values())
-            self.ngram_probs[ngram] = {word: count / total_count for word, count in next_words.items()}
+            if total_count > 0:
+                self.ngram_probs[ngram] = {word: count / total_count for word, count in next_words.items()}
+        print(f"Total probability entries: {len(self.ngram_probs)}")  
+
     
     def train(self, text):
         tokens = self.preprocess_text(text)
