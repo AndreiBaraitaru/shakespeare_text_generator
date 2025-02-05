@@ -43,8 +43,10 @@ python -m unittest src/tests.py
 ```
 
 ## Evaluation
-A survey CSV is generated for human evaluation of the generated text.
-
+A survey CSV is generated for human evaluation of the generated text. You need to run evaluation.py for the csv to be generated. Make sure you are in the proper folder.
+```sh
+python -m unittest src/evaluation.py
+```
 
 ## Extra
 If you have any questions, please reach out to me :D
