@@ -9,7 +9,7 @@ This project implements an n-gram-based text generator to mimic the style of Sha
 ```
 shakespeare_text_generator/
 │── data/
-│   └── shakespeare.txt   # Shakespeare's works
+│   └── shakespeare.txt   # The file I am using for the Shakespeare text
 │── src/
 │   ├── ngram_model.py    # N-gram model implementation
 │   ├── evaluation.py     # Human evaluation analysis
