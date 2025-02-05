@@ -20,10 +20,10 @@ shakespeare_text_generator/
 ## Installation
 1. Clone the repository:
    
-   git clone https://github.com/AndreiBaraitaru/shakespeare_text_generator.git
+   git clone https://github.com/AndreiBaraitaru/shakespeare_text_generator.git <br>
    cd shakespeare_text_generator
    
-2. Install dependencies:
+3. Install dependencies:
    
    pip install -r requirements.txt
    
