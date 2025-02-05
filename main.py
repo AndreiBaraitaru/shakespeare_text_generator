@@ -1,5 +1,7 @@
 import os
 import sys
+
+# Ensure the 'src' directory is in the Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 from ngram_model import NGramModel
