@@ -13,7 +13,7 @@ shakespeare_text_generator/
 │── src/
 │   ├── ngram_model.py    # The n-gram model implementation file where we do the preprocessing, build the n-grams and compute the probabilities
 │   ├── evaluation.py     # Human evaluation analysis
-│   ├── tests.py          # Unit tests
+│   ├── tests.py          # Unit tests file
 │── main.py               # Entry point for running the project
 │── README.md             # Project documentation
 │── requirements.txt      # Dependencies
