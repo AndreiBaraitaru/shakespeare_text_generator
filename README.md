@@ -1,7 +1,39 @@
 # Shakespearean Text Generator
 
 ## Overview
-This project implements an n-gram-based text generator to mimic the style of Shakespeare. It supports bigrams, trigrams, and quadgrams to generate text based on a given seed phrase.
+This project is an n-gram-based text generator that mimics the writing style of William Shakespeare. It processes Shakespeare's works, learns how words are structured, and generates text by predicting the most likely next word based on prior words.
+
+## How It Works
+1. **Reads and Preprocesses Shakespeare's Text**  
+   - Converts it to lowercase, removes punctuation, and tokenizes it into words.
+   
+2. **Builds N-Grams (Word Sequences)**  
+   - Creates bigrams (2-grams), trigrams (3-grams), and quadgrams (4-grams) from the text.
+   
+3. **Counts Word Occurrences**  
+   - Tracks how often a word follows a given n-gram.
+   
+4. **Calculates Probabilities**  
+   - Determines the likelihood of each word appearing after an n-gram.
+   
+5. **Generates Text**  
+   - Uses probabilities to predict and generate text based on an input seed phrase.
+
+## Example Output
+If trained correctly, running:
+```python
+generate_text(model, "to be", length=10)
+```
+Might return:
+```
+"to be or not to be that is the question"
+```
+
+## Applications
+✔ **Text prediction** (auto-complete in search engines)  
+✔ **Text generation** (imitating Shakespeare or other styles)  
+✔ **Analyzing word relationships** (understanding word pairings in literature)  
+
 
 ## Folder Structure
 ~~~
