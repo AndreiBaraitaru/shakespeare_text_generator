@@ -10,13 +10,10 @@ class NGramModel:
     
     def preprocess_text(self, text):
         text = text.lower()
-        text = re.sub(r'[^a-zA-Z ]', ' ', text)  # Ensure spaces remain
-        tokens = text.split()  # Now correctly splits words
-        print(f"Debug - First 20 tokens: {tokens[:20]}")  # Debugging print
+        text = re.sub(r'[^a-zA-Z ]', ' ', text)  
+        tokens = text.split()  
+        print(f"Debug - First 20 tokens: {tokens[:20]}")  
         return tokens
-
-
-
     
     def build_ngrams(self, tokens):
         for i in range(len(tokens) - self.n):

@@ -26,7 +26,6 @@ def analyze_feedback(filename="survey.csv"):
 if __name__ == "__main__":
     sample_texts = ["to be or not to be", "shall I compare thee to a summer's day"]
     
-    # Check if survey already exists
     if not os.path.exists("survey.csv"):
         create_survey(sample_texts)
 
